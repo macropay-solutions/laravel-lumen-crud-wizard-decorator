@@ -3,11 +3,12 @@
 This is a decorator lib that can be used with [Laravel crud wizard](https://github.com/macropay-solutions/laravel-lumen-crud-wizard).
 
 Features:
-- renames/maps the column names for the resource and its relations
-- can also compose additional columns from the resource columns and from its relations' columns.
-- can restrict the number of columns returned to the requested ones.
-- flatens the resource with its relations into a single table
-- eases the filtering on the relations' columns by transforming them into filters by the resource's column in regards to the url query string
+- download as csv via stream,
+- renames/maps the column names for the resource and its relations,
+- can also compose additional columns from the resource columns and from its relations' columns,
+- can restrict the number of columns returned to the requested ones, including in the csv download as stream,
+- flatens the resource with its relations into a single table,
+- eases the filtering on the relations' columns by transforming them into filters by the resource's column in regards to the url query string,
 
 It is recommended for projects that expose data via API to front end (JS).
 
