@@ -11,7 +11,7 @@ It is recomended for projects that expose data via API to front end (JS).
 
 **If interested, please [contact us](https://macropay.net/contact/).**
 
-Code exmaple:
+Code example:
 
     namespace MacropaySolutions\LaravelCrudWizardDecorator\Decorators;
     
