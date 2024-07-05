@@ -11,7 +11,7 @@ Features:
 
 It is recommended for projects that expose data via API to front end (JS).
 
-**The lib is proprietary and it can be used only after an agreement.**
+**The lib is proprietary and can be used only after an agreement.**
 
 **If interested, please [contact us](https://macropay.net/contact/).**
 
