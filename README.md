@@ -5,6 +5,58 @@ This is a decorator lib that can be used with [Laravel crud wizard](https://gith
 It renames/maps the column names for the resource and its relations, and it can also compose additional columns from the resource columns and from its relations' columns.
 Also, it can restrict the number of columns returned to the requested ones.
 
+Code exmaple:
+
+    namespace MacropaySolutions\LaravelCrudWizardDecorator\Decorators;
+    
+    class ExampleDecorator extends AbstractResourceDecorator
+    {
+        public function getResourceMappings(): array
+        {
+            return [
+                'id' => 'ID',
+                'updated_at' => 'updatedAt',
+                'created_at' => 'createdAt',
+            ];
+        }
+    
+        /**
+         * @inheritDoc
+         */
+        public function getRelationMappings(): array
+        {
+            return [
+                'roleRelation' => [
+                    'name' => 'roleRelationName',
+                    'color' => 'roleRelationColor',
+                ],
+            ];
+        }
+    
+        /**
+         * @inheritDoc
+         */
+        public function getComposedColumns(): array
+        {
+            return [
+                'hasRelations' => fn(array $row): bool => $this->getHasRoleRelations($row),
+                'roleNameColor' => fn(array $row): ?string => $this->getNameColorRoleRelation($row),
+            ];
+        }
+    
+        private function getHasRoleRelations(array $row): bool
+        {
+            return isset($row['role_relation']);
+        }
+    
+        private function getNameColorRoleRelation(array $row): ?string
+        {
+            return $this->getHasRoleRelations($row) ?
+                ($row['role_relation']['name'] ?? '') . ' ' . ($row['role_relation']['name'] ?? '') :
+                null;
+        }
+    }
+
 
 
  [Crud routes](#-crud-routes)
