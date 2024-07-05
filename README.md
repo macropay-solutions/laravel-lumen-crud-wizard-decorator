@@ -298,6 +298,7 @@ Json Response:
 
 headers:
 
+      Accept: application/json
       
 
 Json Response:
