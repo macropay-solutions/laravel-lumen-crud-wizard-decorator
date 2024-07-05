@@ -5,6 +5,8 @@ This is a decorator lib that can be used with [Laravel crud wizard](https://gith
 It renames/maps the column names for the resource and its relations, and it can also compose additional columns from the resource columns and from its relations' columns.
 Also, it can restrict the number of columns returned to the requested ones.
 
+It is recomended for projects that expose data via API to front end (JS).
+
 Code exmaple:
 
     namespace MacropaySolutions\LaravelCrudWizardDecorator\Decorators;
