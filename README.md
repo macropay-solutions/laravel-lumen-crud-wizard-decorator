@@ -3,7 +3,7 @@
 This is a decorator lib that can be used with [Laravel crud wizard](https://github.com/macropay-solutions/laravel-lumen-crud-wizard).
 
 Features:
-- download as csv via stream,
+- download as csv via stream without saving the file on server,
 - renames/maps the column names for the resource and its relations,
 - can also compose additional columns from the resource columns and from its relations' columns,
 - can restrict the number of columns returned to the requested ones, including in the csv download as stream,
@@ -244,6 +244,10 @@ Json Response:
             ]
         }
     }
+    
+Binary response for application/xls
+
+Binary response as stream for text/csv
 
 
 #### 4 Update resource (or create)
