@@ -7,6 +7,10 @@ Also, it can restrict the number of columns returned to the requested ones.
 
 It is recomended for projects that expose data via API to front end (JS).
 
+**The lib is proprietary and it can be used only after an agreement.**
+
+**If interested, please [contact us](https://macropay.net/contact/).**
+
 Code exmaple:
 
     namespace MacropaySolutions\LaravelCrudWizardDecorator\Decorators;
