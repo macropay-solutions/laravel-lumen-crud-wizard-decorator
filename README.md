@@ -16,6 +16,8 @@ It is recommended for projects that expose data via API to front end (JS).
 
 **If interested, please [contact us](https://macropay.net/contact/).**
 
+[Demo page](http://89.40.19.34/laravel-10/laravel-lumen-crud-wizard/decorated).
+
 Code example:
 
     namespace MacropaySolutions\LaravelCrudWizardDecorator\Decorators;
