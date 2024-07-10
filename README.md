@@ -20,6 +20,9 @@ It is recommended for projects that expose data via API to front end (JS).
 
 [Demo project](https://github.com/macropay-solutions/laravel-crud-wizard-decorator-demo).
 
+![image](https://github.com/macropay-solutions/laravel-lumen-crud-wizard-decorator/assets/153634237/b8620fc4-03b0-4251-805e-b01f749a7213)
+
+
 Code example:
 
     namespace MacropaySolutions\LaravelCrudWizardDecorator\Decorators;
