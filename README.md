@@ -26,6 +26,7 @@ Code example:
     
     class ExampleDecorator extends AbstractResourceDecorator
     {
+        public array $withoutRelations = [];
         public function getResourceMappings(): array
         {
             return [
