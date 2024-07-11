@@ -1,6 +1,6 @@
 # laravel-lumen-crud-wizard-decorator
 
-This is a decorator lib that can be used with [Laravel crud wizard](https://github.com/macropay-solutions/laravel-lumen-crud-wizard).
+This is a decorator and composition lib that can be used with [Laravel crud wizard](https://github.com/macropay-solutions/laravel-lumen-crud-wizard).
 
 Features:
 - download as csv via stream without saving the file on server,
