@@ -25,6 +25,8 @@ It is recommended for projects that expose data via API to front end (JS).
 
 Code example:
 
+```php
+
     namespace MacropaySolutions\LaravelCrudWizardDecorator\Decorators;
     
     class ExampleDecorator extends AbstractResourceDecorator
@@ -76,7 +78,7 @@ Code example:
                 null;
         }
     }
-
+```
 
 
  [Crud routes](#-crud-routes)
