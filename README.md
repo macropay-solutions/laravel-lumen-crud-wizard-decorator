@@ -312,7 +312,16 @@ Json Response:
         }
     }
 
-Note: The decorator undecorates the POST, PUT and PATCH requests into resource key value pairs and among them, each of the keys that belong to a relation is undecorated under the relation name key, resulting the same structure as when retrieving the resource with that relation included **when the relation is one to one** using [laravel-lumen-crud-wizard](https://github.com/macropay-solutions/laravel-lumen-crud-wizard). This facilitates the update on the relation also, if codded in the constroller of [laravel-lumen-crud-wizard](https://github.com/macropay-solutions/laravel-lumen-crud-wizard) (not codded by default). **Bear in mind that this undecoration is always considering the relations as one to one**.
+Note: The decorator undecorates the POST, PUT and PATCH requests into resource key value pairs and among them,
+each of the keys that belong to a relation is undecorated under the relation name key,
+resulting the same structure as when retrieving the resource with that relation included
+**when the relation is one to one** using [laravel-crud-wizard](https://github.com/macropay-solutions/laravel-crud-wizard).
+This facilitates the update on the **one to one** relation also, if declared in the decorator property:
+
+    protected array $upsertOneToOneRelationsDbCrudMap = [RelatedModel::class => RelatedModelController:class];
+
+**Bear in mind that this undecoration is always considering the relations as one to one**.
+In case of validation errors, only the keys from data object will be decorated!
 
 
 #### 5 Delete resource
