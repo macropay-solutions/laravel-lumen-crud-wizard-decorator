@@ -313,7 +313,7 @@ Json Response:
         }
     }
 
-Note: The decorator undecorates the POST, PUT and PATCH requests into resource key value pairs and among them,
+Note: The decorator undecorates the POST, PUT and PATCH requests into resource key value pairs and among them for update (PUT) only,
 each of the keys that belong to a relation is undecorated under the relation name key,
 resulting the same structure as when retrieving the resource with that relation included
 **when the relation is one to one** using [laravel-crud-wizard](https://github.com/macropay-solutions/laravel-crud-wizard).
